@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+<meta name = "description" content = "Simple Website Assignment"> 
+<meta name = "author" content = "Raina Mak"> 
+<title>Assignment 3</title>
+<link rel ='stylesheet' href ='stylesheet.css'> 
+	<style type ="text/css">
+        
+        .wrapper{
+            width: 100%; 
+            max-width: 600px; 
+            marign: 50px auto 0; 
+            padding: 20px;
+            box-sizing: border-box; 
+        }
+        
+        #page-container{
+            margin-top: 20px; 
+            display:flex; 
+        }
+        .sidebar{
+           
+            flex-grow: 1;
+            float: left; 
+            margin: 0 2% 
+
+        }
+		
+        .main-content{
+            width: 50%; 
+            color: #777; 
+            text-align:center;
+            float:right;
+            flex-grow: 1; 
+            margin: 0 2% 
+            background-color: #fff; 
+            align-content: middle;
+        }
+        
+
+        
+        @media (max-width:500px){
+            #page-container {display: block}
+            .sidebar, main-content{display:block; width:100%}
+            .main-content{width: 100%; flex-grow: unset; margin: 0;}
+        }
+    
+        
+        h2{
+            color: #777; 
+            text-align:center; 
+            text-transform:uppercase; 
+            font-style:normal;  
+        }
+        
+        h3{
+            color: #777; 
+            text-align: center; 
+            text-transform:uppercase; 
+            font-size: 15px;
+        }
+        
+	</style>
+</head>
+
+
+
+
+<body>
+   
+	<header>
+		<ul class = "menu">	
+			<li><a href = "index.html"> ABOUT </a> </li>
+			<li><a href = "shop.html"> SHOP NOW </a> </li>
+			<li><a href = "contact.html"> CONTACT </a> </li>
+            
+        </ul>
+        <div class = "title"> 
+        <h1> Raina's Roses</h1>
+        </div>
+        
+	</header>	
+    
+    <h2> About our family</h2>
+    <hr> 
+    <div id = "page-container"> 
+    
+        <div class = "sidebar">
+            <a href = "preparation.jpg" target ="_blank">  <img src = "preparation.jpg" alt = "Handmade Bouquets" width = 100% height = auto > </a> 
+        </div>
+        
+        <div class = "main-content">
+            <h3> 
+                <p> Wild At Heart </p>
+            </h3>
+            
+            <p> 
+            Bloomed and established in 2020, Raina's Roses aims to bring the most stylish and unique bouquets for your most special moments. Our one of a kind bouquets are ethically grown, locally sourced, and made with love. Here at our family, we prioritize handling both our products and services with careful detail, attention, and utmost quality. We hope our bouquets shine some color on your day. 
+            </p>
+            
+    
+        </div>
+    
+    </div>
+ 
+
+
+    
+    <footer>
+        <p> &copy; 2020 Raina's Roses</p>
+    </footer> 
+   
+</body>
+
+
+
+
+
+
+</html>

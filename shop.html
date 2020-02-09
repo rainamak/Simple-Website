@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+<meta name = "description" content = "Simple Website Assignment"> 
+<meta name = "author" content = "Raina Mak"> 
+<title>Assignment 3</title>
+<link rel ='stylesheet' href ='stylesheet.css'> 
+	<style type = "text/css">
+        *{
+            box-sizing: border-box;     
+            
+        }
+        
+        .gallery{
+            border:1px solid #ccc; 
+        }
+		
+        .gallery img{
+            width: 100%; 
+            height: auto; 
+        }
+        
+        .des{
+            font-style:italic; 
+            padding: 15px; 
+            text-align: center; 
+            
+        }
+        
+        .price{
+            padding: 10px; 
+            text-align: center;
+        }
+       
+    
+        .responsive{
+            padding: 0 10px; 
+            /*float: left; /*THIS IS AFFECTING THE FOOTER*/ 
+            display: inline-block;
+            width: 20%; 
+            margin-bottom: 20px; 
+        }
+    
+        
+        /*rearranging for different screen sizes
+        default = 4 images side by side 
+        smaller than 700px = 2 images side by side 
+        smaller than 500px = images stack vertically 
+        */ 
+        
+        @media only screen and (max-width: 700px){
+            .responsive{
+                width: 50%; 
+                margin: 6px 0;       
+            }
+        }
+        
+         @media only screen and (max-width: 500px){
+            .responsive{
+                width: 100%; 
+                margin: 6px 0;       
+            }
+        }
+        
+       
+        
+        
+        
+	</style>
+</head>
+
+
+
+
+<body>
+	<header>
+		<div class = "row"> 
+		<ul class = "menu">	
+			<li><a href = "index.html"> ABOUT </a> </li>
+			<li><a href = "shop.html"> SHOP NOW </a> </li>
+			<li><a href = "contact.html"> CONTACT </a> </li>
+            
+        </ul>
+        </div>
+        
+        <div class = "title"> 
+        <h1> Raina's Roses</h1>
+        </div>
+        
+        
+	</header>	
+
+    
+    <h2> Shop our customer favorite Seasonal Collection </h2>
+    <hr>
+    <div class = "responsive"> 
+        <div class ="des"> Spring Bouquet</div>
+        <div class = "gallery">
+            <a href = "spring.jpg" target = "_blank"> <img src = "spring.jpg" alt = "Spring Bouquet" width = "200" height = "200"></a>
+            <div class ="price"> $36.99</div>
+        </div>
+    </div>
+    
+    <div class = "responsive"> 
+        <div class ="des"> Summer Bouquet</div>
+        <div class = "gallery">
+            <a href = "summer.jpg" target = "_blank"> <img src = "summer.jpg" alt = "Summer Bouquet" width = "200" height = "200"></a>
+            <div class ="price"> $45.99</div>
+        </div>
+    </div>
+    
+    <div class="responsive"> 
+        <div class ="des"> Fall Bouquet</div>
+        <div class = "gallery">
+            <a href = "fall.jpg" target = "_blank"> <img src = "fall.jpg" alt = "Fall Bouquet" width = "200" height = "200"></a>
+            <div class ="price"> $40.99</div>
+        </div>
+    </div>
+    
+    <div class="responsive"> 
+        <div class ="des"> Winter Bouquet</div>
+        <div class = "gallery">
+            <a href = "winter.jpg" target = "_blank"> <img src = "winter.jpg" alt = "Winter Bouquet"width = "200" height = "200"></a>
+            <div class ="price">  $50.99</div>
+        </div>
+    </div>
+
+
+ 
+    <footer>
+        <p> &copy; 2020 Raina's Roses</p>
+    </footer>
+    
+
+
+
+	
+</body>
+
+
+
+</html>
