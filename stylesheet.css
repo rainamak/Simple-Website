@@ -1,0 +1,203 @@
+*
+body, html{ 
+	margin: 0;
+	padding: 0;
+    background-color: #ffe9ec;
+ }
+
+
+header 
+ { 
+ 	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(backgroundimage.jpg);
+ 	background-size: cover;
+ 	background-position: center;
+    height: 250px; 
+    width: 100%; 
+
+}
+
+
+
+
+.menu 
+{  
+    float: right; 
+    margin-top: 30px; 
+    z-index: 5;
+}
+    
+
+.menu li
+{
+    display: inline-block; 
+}
+
+.menu li a
+{
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 20px; 
+    font-family: "Roboto", sans-serif, serif;
+    font-size: 15px; 
+}
+
+
+
+.menu li a:hover {
+    border: 1px solid white; 
+}
+
+
+.title {
+    top: 80px;
+    font-family: "Apple Chancery", cursive; 
+    position: absolute; 
+    vertical-align: center;
+    width: 400px; /* fix this for adaptive styles* seems to disable hover element */
+    margin-left: -200px;
+    padding: 0px;
+    left: 50%;
+    z-index: 0;
+    
+}
+
+
+h1 {
+    margin: 0px 0px;
+    color: white; 
+    font-size: 70px; 
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background: #000000;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    height: 40px;
+    vertical-align:middle;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif; 
+}
+
+footer p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: middle;
+}
+
+
+
+/*CONTACT FORM STYLING*/ 
+.container{ 
+    width: 100%; 
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding:20px
+    box-sizing: border-box; 
+
+}
+
+.content{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.content h2{
+    letter-spacing: 8px; 
+}
+
+.form{
+    width:100%
+    margin: 25px 0; 
+    
+}
+
+
+.top-form,.middle-form,.bottom-form{
+    width: 50%
+    min-height: 65px; 
+    margin:10px 0; 
+}
+
+.form input[type = "text"], .form textarea{
+    padding: 15px 10px; 
+    box-sizing: border-box; 
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px; 
+    outline: none; 
+    transition: all 0.2s ease; 
+    */
+}
+
+/* for focus when on current input */
+.form input:focus, .form textarea:focus{
+    border-color:#4ca1af; 
+   
+}
+
+.form .label{
+    margin-bottom: 5px; 
+    margin-top: px;
+    text-transform: capitalize;
+}
+
+.top-form .inner-form{
+    width: 30%; 
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child{
+    margin-right: 0; 
+}
+
+
+.middle-form{
+    clear: both;
+}
+
+.bottom-form textarea{
+    height: 120px; 
+}
+
+
+.btn{
+    background: #904050; 
+    width: 150px; 
+    padding: 10px 0; 
+    border-radius: 2px; 
+    text-align: center; 
+    text-transform: uppercase;
+    color: #fff; 
+    letter-spacing: 5px; 
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:500px){
+    .container{
+        margin: 25px auto 0; 
+    }
+    
+    .top-form .inner-form{
+        width:100%;
+        margin: 5px 0; 
+    }
+    
+   
+}
+
+
+
+
+
